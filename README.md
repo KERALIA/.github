@@ -49,6 +49,7 @@
 **Maintainer:** Patel Aum (AEROCKY) — *Lead developer*
 
 **ROM Porter / Extractor:** Dhruv Kalariya
+
 **Bug Reporter and Tester:** Dhruv Nakrani
 
    🔗 **GitHub:** [@KERALIA](https://github.com/KERALIA)
