@@ -1,0 +1,83 @@
+
+<h1 align="center">📱 Android Development for POCO X7 Pro (rodin)</h1>
+
+<p align="center">
+  <strong>Device configuration for POCO X7 Pro 5G / Redmi Turbo 4</strong><br>
+  <i>An upper mid-range smartphone from Xiaomi, released on January 09, 2025.</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-16-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 16" />
+  <img src="https://img.shields.io/badge/SoC-Dimensity_8400_Ultra-blue?style=for-the-badge" alt="Dimensity 8400 Ultra" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status Active" />
+</p>
+
+> [!NOTE]
+> This organization hosts device trees, kernel sources, and hardware layers for Android development on `rodin`, focusing on clean bring-up, stability, and performance.
+> Its purpose is intended for **personal use** and **public releases**.
+
+<p align="center">
+  <img src="https://github.com/KERALIA/PROJECT-Synamatics-Exports/blob/main/1a097d170ec6940798552eee961fc641.png" 
+       alt="POCO X7 Pro" 
+       style="padding: 0 50px;">
+</p>
+
+---
+
+## 📊 Device Specifications
+
+| Component | Specification |
+| :--- | :--- |
+| 📱 **SoC** | Mediatek Dimensity 8400 Ultra (MT6899) |
+| 🧠 **CPU** | Octa-core (1x3.25 GHz Cortex-A725 & 3x3.0 GHz Cortex-A725 & 4x2.1 GHz Cortex-A725) |
+| 🎮 **GPU** | Mali-G720 MC7 |
+| 💾 **Memory** | 8/12GB, LPDDR5X |
+| 💽 **Storage** | 256/512GB, UFS 4.0 |
+| 🤖 **Shipped OS**| Android 15, HyperOS 2 |
+| 🔋 **Battery** | Non-removable Li-Ion 6550/6000 mAh |
+| 📏 **Dimensions**| 160.8 x 75.2 x 8.3 mm (6.33 x 2.96 x 0.33 in) |
+| ⚖️ **Weight** | 195 g or 198 g (6.88 oz) |
+| 📺 **Display** | AMOLED, 68B colors, 120Hz, 1920Hz PWM, Dolby Vision, HDR10+, 1400 nits (HBM), 3200 nits (peak) |
+| 📐 **Size & Res**| 6.67 inches (~88.8% screen-to-body), 1220 x 2712 pixels, 20:9 ratio (~446 ppi) |
+| 📸 **Rear Cam** | 50 MP, f/1.5, 26mm (wide), OIS **+** 8 MP, f/2.2, 15mm (ultrawide) |
+| 🤳 **Front Cam** | 20 MP, f/2.2, 25mm (wide) |
+
+---
+
+## 👤 Maintainer
+
+**Maintainer:** Patel Aum (AEROCKY) — *Lead developer*
+
+**ROM Porter / Extractor:** Dhruv Kalariya
+**Bug Reporter and Tester:** Dhruv Nakrani
+
+   🔗 **GitHub:** [@KERALIA](https://github.com/KERALIA)
+
+
+---
+
+## 📁 Repositories
+
+| Component | Repository Link |
+| :--- | :--- |
+| 🌳 **Device Tree** | [android_device_xiaomi_rodin](https://github.com/KERALIA/android_device_xiaomi_rodin) |
+| 🛡️ **Sepolicy VNDR** |[android_device_mediatek_sepolicy_vndr](https://github.com/KERALIA/android_device_mediatek_sepolicy_vndr) |
+| ⚙️ **MTK Hardware** | [android_hardware_mediatek](https://github.com/KERALIA/android_hardware_mediatek) |
+| ⚙️ **Xiaomi Hardware**|[android_hardware_xiaomi](https://github.com/KERALIA/android_hardware_xiaomi) |
+| 🐧 **Kernel Source** | [android_device_xiaomi_rodin-kernel](https://github.com/KERALIA/android_device_xiaomi_rodin-kernel) |
+
+---
+
+### 📦 Extract Vendor Files
+
+```
+./extract-files.py Path/To/Dumpyara/Extract
+```
+
+---
+## 📝 Notes
+
+> [!IMPORTANT]
+> *   **Directory:** Place these trees in the Android source under the strictly listed paths (`device/xiaomi/rodin`, `hardware/mediatek`, etc.).
+> *   **Context:** Execute the commands from the **source root** so relative destinations resolve correctly.
+> *   **Building:** Build steps vary by ROM; check the specific ROM’s documentation for the correct `lunch` combo and build targets.
